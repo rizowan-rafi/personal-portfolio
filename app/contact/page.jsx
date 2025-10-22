@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 import React, { useRef } from "react";
+
 const info = [
     {
         icon: <FaPhoneAlt />,
@@ -24,6 +25,7 @@ const info = [
 ];
 
 import { motion } from "framer-motion";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
@@ -51,8 +53,14 @@ const Contact = () => {
               process.env.NEXT_PUBLIC_PUBLIC_KEY
           )
           .then(
-            () => { alert("Message sent!"); form.current.reset();},
-              (error) => alert("Failed to send message: " + error.text)
+            () => { Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "your message has been sent. Thank you!",
+                showConfirmButton: false,
+                timer: 1500,
+            }); form.current.reset();},
+              (error) => console.log("Failed to send message: " + error.text)
           );
   };
     return (
@@ -67,7 +75,6 @@ const Contact = () => {
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row gap-[30px] ">
                     <div className="xl:h-[54%] order-2 xl:order-none ">
-    
                         <form
                             ref={form}
                             onSubmit={handleSubmit}
@@ -78,9 +85,10 @@ const Contact = () => {
                             </h3>
                             <p className="text-white/60 ">
                                 {" "}
-                                Eum doloremque cupiditate exercitationem
-                                accusantium enim recusandae eligendi
-                                reprehenderit, culpa a esse.
+                                Whether you have a project in mind, need a
+                                developer for collaboration, or just want to say
+                                hi — feel free to reach out. I’m always open to
+                                discussing new ideas and opportunities.
                             </p>
                             <div className="grid grid-cols-1  md:grid-cols-2 gap-6 ">
                                 <Input
