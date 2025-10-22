@@ -62,8 +62,8 @@ const projects = [
             "A sleek and modern portfolio website built with Next.js and Tailwind CSS, featuring smooth Framer Motion animations and an elegant Shadcn UI design system. It highlights personal projects, skills, and experience with a focus on performance, responsive design, and engaging user interaction.",
         stack: ["nextjs", "tailwindcss", "framer-motion", "shadecn ui"],
         image: "/assets/assets/work/thumb3.png",
-        live: "#",
-        github: "#",
+        live: "https://madebyrafi.vercel.app/",
+        github: "https://github.com/rizowan-rafi/personal-portfolio",
     },
 ];
 
