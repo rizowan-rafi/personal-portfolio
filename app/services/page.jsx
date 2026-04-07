@@ -168,7 +168,7 @@ const Services = () => {
                                                     src={project.image}
                                                     fill
                                                     className="object-contain "
-                                                    alt=""
+                                                    alt="image 1"
                                                 />
                                             </div>
                                         </div>
