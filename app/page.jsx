@@ -18,14 +18,19 @@ export default function Home() {
                           </span>
                       </h1>
                       <p className="max-w-[500px] mb-9 text-white/80">
-                          I excel at building dynamic and responsive full-stack
-                          web applications, turning complex problems into
-                          intuitive and user-friendly digital experiences.
+                          Aspiring Software Engineer focused on solving
+                          real-world problems through full-stack development.
+                          Rather than just writing code,I enjoy identifying
+                          bottlenecks—whether in database performance or UI
+                          logic—and engineering efficient solutions using the
+                          MERN stack and Next.js. My approach is defined by
+                          curiosity, a strong foundation in CSE fundamentals,
+                          and a drive to build tools that provide genuine value
                       </p>
 
                       {/* btn and social  */}
                       <div className="flex flex-col xl:flex-row items-center gap-8">
-                          <Link href="https://drive.google.com/uc?export=download&id=1Nmu1TaxTI3-vTrnxGt8ULbl3X74bI5ny">
+                          <Link href="https://drive.google.com/file/d/13y1sk0ykuWKV9vnG8pZeJEQ1W28A9JZE/view?usp=sharing">
                               <Button
                                   variant={"outline"}
                                   size={"lg"}

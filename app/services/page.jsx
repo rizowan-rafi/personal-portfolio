@@ -50,7 +50,7 @@ const projects = [
             "nodejs",
             "mongodb",
         ],
-        image: "/assets/assets/work/thumb2.jpeg",
+        image: "/assets/assets/work/thumb2.png",
         live: "https://gigflow-client.web.app/",
         github: "https://github.com/rizowan-rafi/Gig-flow",
     },
@@ -167,7 +167,7 @@ const Services = () => {
                                                 <Image
                                                     src={project.image}
                                                     fill
-                                                    className="object-cover "
+                                                    className="object-contain "
                                                     alt=""
                                                 />
                                             </div>
